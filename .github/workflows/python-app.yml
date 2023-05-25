@@ -22,7 +22,7 @@ jobs:
           pylint main.py
       - name: Test with pytest
         run: |
-          pytest test.py
+          coverage run -m pytest test.py
       - name: Test of coverage
         run: |
-          coverage run -m pytest test.py
+          coverage report -m
