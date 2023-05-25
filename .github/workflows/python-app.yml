@@ -19,10 +19,10 @@ jobs:
           pip install -r requirements.txt
       - name: Test with pylint
         run: |
-          pylint main.py
+          pylint main.py transform.py
       - name: Test with pytest
         run: |
           coverage run -m pytest test.py
-      - name: Test of coverage
+      - name: Coverage report
         run: |
           coverage report -m
