@@ -23,6 +23,6 @@ jobs:
       - name: Test with pytest
         run: |
           pytest test.py
-      - name: Test with pytest
+      - name: Test of coverage
         run: |
-          coverage run -m test.py
+          coverage run -m pytest test.py
