@@ -11,6 +11,7 @@ def to_lower_case(string):
     return string.lower()
 
 
+
 def to_capitalize(string):
     """ string capitalized"""
     return string.capitalize()
